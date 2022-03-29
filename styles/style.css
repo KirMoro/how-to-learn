@@ -13,13 +13,88 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin: 0;
+  padding: 0;
   /* выше установили ограничения для секции */
+}
+
+/* ниже установил цвет фона для header */
+.header_color_gray {
+  background-color: #f2f2f2;
+}
+
+/* ниже общие свойства для логотипа */
+.logo {
+  width: 228px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo__place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  background-image: url(../images/logo_place_header.svg);
+}
+
+.header__title {
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 700;
+  width: 730px;
+}
+
+.header__title_position_center-left {
+  align-self: center;
+  margin-left: 64px;
+}
+
+.header__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  width: 388px;
+  font-weight: 300;
+}
+
+.header__subtitle_position_bottom {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+}
+
+.header__main-illustration_position_right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+}
+
+.header__square-pic_position_center-right {
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
