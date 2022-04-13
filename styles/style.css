@@ -64,6 +64,12 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  opacity: 100%;
+  transition: opacity 0.5s
+}
+
+.header__link:hover {
+  opacity: 50%;
 }
 
 .header__main-illustration {
@@ -130,12 +136,91 @@
 
 /* конец стилей description */
 
+/* начало стилей techniques */
+.techniques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cards__item {
+  width: 240px;
+  text-align: center;
+  margin-right: 100px;
+}
+
+.cards__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px 40px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.cards__description {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* конец стилей techniques */
+
+
+/* начало стилей video */
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video__iframes {
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 50px 0 0 0;
+}
+
+.video__iframe {
+width: 515px;
+height: 316px;
+margin: 0 20px 0 0;
+}
+
+.video__iframe:last-child {
+  margin: 0 0 0 0;
+}
+
+/* конец стилей video */
+
 /* начало стилей digits */
 .digits {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
+  margin: 100px 0 100px 0;
 }
 
 .section-title {
@@ -190,6 +275,17 @@
 }
 /* конец стилей digits */
 
+/* начало стилей oakley */
+.oakley {
+  display: flex;
+  justify-content: center;
+  padding: 160px 0 100px 0;
+  margin-top: -60px;
+  background-color: #f2f2f2;
+}
+
+/* конец стилей oakley */
+
 /* начало стилей feynman */
 
 .feynman {
@@ -207,7 +303,7 @@
   font-weight: 700;
   width: 648px;
   text-align: center;
-  margin: 100px 0 70px 0;
+  margin: 0 0 70px 0;
   z-index: 1;
 }
 
@@ -238,10 +334,16 @@
   position: absolute;
   top: 50%;
   right: 48px;
+  opacity: 100%;
+  transition: opacity 0.5s
 }
 
+.feynman__link:hover {
+  opacity: 50%;
+}
 
 /* конец стилей feynman */
+
 /* начало стилей kaufman */
 
 .kaufman {
@@ -252,7 +354,6 @@
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
-  /*padding: 90px 0;*/
 }
 
 .section-title_theme_dark {
@@ -293,6 +394,123 @@
 }
 
 /* конец стилей kaufman */
+
+/* начало стилей resources */
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.resources__logo-zone {
+width: 1100px;
+margin: 80px auto 217px auto;
+display: flex;
+list-style-type: none;
+padding: 0;
+text-align: center;
+
+}
+
+.resources__link {
+width: 270px;
+height: 38px;
+opacity: 100%;
+transition: opacity 0.5s
+}
+
+.resources__link:hover {
+  opacity: 50%;
+}
+
+/* конец стилей resources */
+
+/* khan */
+
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+
+}
+
+.khan__container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.khan__author {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.khan__title {
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin: 0;
+}
+
+.khan__quote {
+  max-width: 790px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  margin: 50px 0 36px 0;
+}
+
+.khan__quote-author {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin: 0;
+}
+
+.khan__quote-author-subline {
+  max-width: 790px;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: normal;
+  margin: 10px 0 68px 0;
+}
+
+.khan__book-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  margin-right: 48px;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.khan__buy-link {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  opacity: 100%;
+  transition: opacity 0.5s
+}
+
+.khan__buy-link:hover {
+  opacity: 50%;
+}
+
+/* khan */
+
+
 
 /* начало стилей footer */
 .footer {
@@ -366,6 +584,12 @@ justify-content: space-between;
   font-weight: normal;
   text-decoration: none;
   color: white;
+  opacity: 100%;
+  transition: opacity 0.5s
+}
+
+.footer__column-link:hover {
+  opacity: 50%;
 }
 
 .footer__social-icon {
